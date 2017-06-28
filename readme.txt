@@ -66,6 +66,5 @@ fpk ファイル内の問題ファイルは、1024個まで使うことができます。
 
 ========================================
 ヅラChu＠てとら★ぽっと
-zurachu@zurachu.net
-http://zurachu.net/
+zurachu@gmail.com
 

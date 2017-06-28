@@ -7,15 +7,6 @@
 /*                                                       */
 /*********************************************************/
 
-■ ソース・バイナリ配布元
-
-○ source ( Subversion )
-svn://tamaki.zurachu.net/hitofude/trunk
-
-○ binary
-http://tamaki.zurachu.net/~zurachu/hitofude.lzh
-
-
 ■ 著作権
 
 P/ECEヒトフデはフリーソフトですが、
@@ -23,8 +14,8 @@ P/ECEヒトフデはフリーソフトですが、
 許可なく再配布することを禁じます。
 
 問題データは、ヒトフデWiki に投稿されている問題を利用させていただきました。
-http://w2.makko.biz/~hito/index.php?FrontPage
-著作権は、各製作者にあるはずです。
+http://w2.makko.biz/~hito/index.php?FrontPage（リンク切れ）
+著作権は、各製作者にあるはずです。が、リンク切れのため確認がとれません。
 
 fpk ファイル作成、展開には、
 Autch さんの『par』『libfpk』を利用させていただきました。
