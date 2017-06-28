@@ -1,0 +1,200 @@
+/*********************************************************/
+/*                                                       */
+/*    P/ECEヒトフデ                                      */
+/*                                                       */
+/* (c) 2005 ヅラChu＠てとら★ぽっと                      */
+/* (c) 2004-2005 Nintendo / MITCHELL                     */
+/*                                                       */
+/*********************************************************/
+
+■ ソース・バイナリ配布元
+
+○ source ( Subversion )
+svn://tamaki.zurachu.net/hitofude/trunk
+
+○ binary
+http://tamaki.zurachu.net/~zurachu/hitofude.lzh
+
+
+■ 著作権
+
+P/ECEヒトフデはフリーソフトですが、
+著作権はヅラChu＠てとら★ぽっとが所持しています。
+許可なく再配布することを禁じます。
+
+問題データは、ヒトフデWiki に投稿されている問題を利用させていただきました。
+http://w2.makko.biz/~hito/index.php?FrontPage
+著作権は、各製作者にあるはずです。
+
+fpk ファイル作成、展開には、
+Autch さんの『par』『libfpk』を利用させていただきました。
+これらの著作権について、readme の著作権条項を以下に引用します。
+
+--------------------
+○ par
+
+par の LZSS 展開ルーチンは，p/ware / Hitode Yamatsuki さんの plz のソースコ
+ードおよび後述の URL の記事が元になっています。この LZSS 展開ルーチンの著作権表
+示は以下のとおりです。
+
+	plz のソースコードの著作権は p/ware / Hitode Yamatsuki が保持しています
+	が、転載・改変・再配布・利用は自由です。便利だと思われたら積極的にご利
+	用ください
+
+p/ware さんによるオリジナルの LZSS デコードルーチンは，
+	http://www.aw.wakwak.com/~hitode/piece/index.html#plz
+から得ることができます。
+
+par における zlib 圧縮エントリの作成・展開には，本家 zlib を使用しています。
+zlib の著作権表示は以下のとおりです。
+
+/******************************************************************************
+  zlib.h -- interface of the 'zlib' general purpose compression library
+  version 1.1.4, March 11th, 2002
+
+  Copyright (C) 1995-2002 Jean-loup Gailly and Mark Adler
+
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+
+  Jean-loup Gailly        Mark Adler
+  jloup@gzip.org          madler@alumni.caltech.edu
+
+
+  The data format used by the zlib library is described by RFCs (Request for
+  Comments) 1950 to 1952 in the files ftp://ds.internic.net/rfc/rfc1950.txt
+  (zlib format), rfc1951.txt (deflate format) and rfc1952.txt (gzip format).
+******************************************************************************/
+
+par/libfpk C68 版より、LZF アルゴリズムによる圧縮と展開をサポートしています。
+LZF アルゴリズムのライセンスは以下のとおりです。
+
+> Copyright (c) 2000-2005 Marc Alexander Lehmann <schmorp@schmorp.de>
+> 
+> Redistribution and use in source and binary forms, with or without modifica-
+> tion, are permitted provided that the following conditions are met:
+> 
+>   1.  Redistributions of source code must retain the above copyright notice,
+>       this list of conditions and the following disclaimer.
+> 
+>   2.  Redistributions in binary form must reproduce the above copyright
+>       notice, this list of conditions and the following disclaimer in the
+>       documentation and/or other materials provided with the distribution.
+> 
+>   3.  The name of the author may not be used to endorse or promote products
+>       derived from this software without specific prior written permission.
+> 
+> THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+> WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MER-
+> CHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+> EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPE-
+> CIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+> PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+> OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+> WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTH-
+> ERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+> OF THE POSSIBILITY OF SUCH DAMAGE.
+> 
+> Alternatively, the following files carry an additional notice that
+> explicitly allows relicensing under the GPLv2: lzf.c lzf.h lzfP.h lzf_c.c
+> lzf_d.c
+
+私が書いた部分については転載・改変・再配布自由です。あなたが開発するアプリに合
+わせてチューニングしたり，プライベートビルドを作成して配布するなどしてください。
+
+--------------------
+○ libfpk
+
+libfpk の，以下に記述のない部分についての著作権は Yui N. が保持します。
+
+C68 版添付の mypmds.par に収録されたデモソングの著作権は、M+B Apos. さんが所有
+しています。
+
+libfpk の LZSS 展開ルーチンは，p/ware / Hitode Yamatsuki さんの plz のソースコ
+ードおよび後述の URL の記事が元になっています。この LZSS 展開ルーチンの著作権表
+示は以下のとおりです。
+
+	plz のソースコードの著作権は p/ware / Hitode Yamatsuki が保持しています
+	が、転載・改変・再配布・利用は自由です。便利だと思われたら積極的にご利
+	用ください
+
+p/ware さんによるオリジナルの LZSS デコードルーチンは，
+	http://www.aw.wakwak.com/~hitode/piece/index.html#plz
+から得ることができます。
+
+pceFileReadPos() は，「おでかけマルチ」のソースコード piece_ex.c から引用しまし
+た。この部分のライセンスについては，AQUAPLUS の「付属ソースを元にしたプログラム
+の再配布の扱いについて」に従います。
+
+原本の著作権表示は以下のとおりです。
+	Copyright:	AQUA (Leaf)  since 2001 - 
+	Programd by.	Miyakusa Masakazu
+
+libfpk における zlib 圧縮エントリの展開には，ヅラChu さんの myunpack のソースを
+利用しており，まかべひろし さんによる zlib 展開ルーチンサンプル（P/ECE HAND
+BOOK Vol.2「緋色の霧」より）のコードを含みます。
+
+ヅラ Chu さんの myunpack は，
+	http://zurachu.net/piece/tips/ppack.html
+から得ることができます。
+
+肝心の pceZlibExpand() は，P/ECE カーネル 1.20 のソースコードをそのまま利用して
+います（inflate.c, inflate.h, piecezl.h）。この部分のライセンスについては，
+AQUAPLUS の「付属ソースを元にしたプログラムの再配布の扱いについて」に従います。
+（inflate.c はパブリックドメイン扱い）
+
+原本の著作権表示は以下のとおりです。
+	Copyright (C)2001 AQUAPLUS Co., Ltd. / OeRSTED, Inc. 
+	all rights reserved.
+	Coded by MIO.H (OeRSTED)
+
+LZF 形式の展開には、liblzf 1.51 の lzf_d.c にパッチを当てて利用しています。
+LZF アルゴリズムのライセンスは以下のとおりです。
+
+> Copyright (c) 2000-2005 Marc Alexander Lehmann <schmorp@schmorp.de>
+> 
+> Redistribution and use in source and binary forms, with or without modifica-
+> tion, are permitted provided that the following conditions are met:
+> 
+>   1.  Redistributions of source code must retain the above copyright notice,
+>       this list of conditions and the following disclaimer.
+> 
+>   2.  Redistributions in binary form must reproduce the above copyright
+>       notice, this list of conditions and the following disclaimer in the
+>       documentation and/or other materials provided with the distribution.
+> 
+>   3.  The name of the author may not be used to endorse or promote products
+>       derived from this software without specific prior written permission.
+> 
+> THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+> WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MER-
+> CHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+> EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPE-
+> CIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+> PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+> OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+> WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTH-
+> ERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+> OF THE POSSIBILITY OF SUCH DAMAGE.
+> 
+> Alternatively, the following files carry an additional notice that
+> explicitly allows relicensing under the GPLv2: lzf.c lzf.h lzfP.h lzf_c.c
+> lzf_d.c
+
+
+私が書いた部分については転載・改変・再配布自由です。あなたが開発するアプリに合
+わせてチューニングしたり，プライベートビルドを作成して配布するなどしてください。
+
