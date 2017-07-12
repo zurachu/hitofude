@@ -16,21 +16,10 @@ ASFLAGS = -c -g -gp=0x0 -near
 LD = pcc33
 LDFLAGS = -g -ls -lm
 
-PGD = pbcc
-PGDFLAGS = -h
 FPK = par
 FPKFLAGS = c -CTr
 
 # ê∂ê¨ãKë•
-
-%.c : 1BIT\%.bmp
-	$(PGD) $(PGDFLAGS) -1 $< .\$@
-
-%.c : 2BIT\%.bmp
-	$(PGD) $(PGDFLAGS) -2 $< .\$@
-
-%.c : 2BIT_MASK\%.bmp
-	$(PGD) $(PGDFLAGS) -m $< .\$@
 
 .c.o:
 	$(CC) $(CFLAGS) $<
@@ -56,9 +45,6 @@ $(PRGNAME).srf : $(OBJS) $(LIBS)
 
 main.o : stage.h
 stage.o : stage.h
-
-$(ICON) : icon.bmp
-	$(PGD) -i $<
 
 $(FILENAME).fpk : $(wildcard QUESTION/*)
 	$(FPK) $(FPKFLAGS) $@ $(sort $^)
